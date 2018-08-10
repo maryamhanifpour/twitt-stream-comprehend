@@ -1,0 +1,11 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - printenv
+      - rm -rf node_modules
+      - npm install
+  build:
+    commands:
+      - npm start
