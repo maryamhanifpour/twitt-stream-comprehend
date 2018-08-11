@@ -6,10 +6,10 @@ AWS.config.loadFromPath('./config.json')
 var kinesis = new AWS.Kinesis();
 
 var client = new Twitter({
-    consumer_key: "spTJLV9jQt1lKV0LJcSaadhg8",
-    consumer_secret: "eNfmjyKFk8nBkMmvGNmCSTZKwQaoxZjO48xImnOZWoO1Px3UG9",
-    access_token_key: "3232884401-z25CboQ9EzTlYvuCYtAq8nYq7zmliY5UyO6l2He",
-    access_token_secret: "FXHe5H6mPIJL4zrFUSxzaJ9rEu71sGDLgJzJuo23PcMjk"
+    consumer_key: "",
+    consumer_secret: "",
+    access_token_key: "",
+    access_token_secret: ""
 });
 
 var stream = client.stream('statuses/filter',{track: 'cat', language: 'en'}); // client.stream(path, params, callback);
